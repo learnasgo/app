@@ -35,7 +35,7 @@ ClientConfirmRequestData = confirmService.get_type('ns0:ClientConfirmRequestData
 ClientReversalRequestData = reverseService.get_type('ns0:ClientReversalRequestData')
 
 # GENERAL
-CallbackURL = 'https://barqat.ir/cart/verify/' # Important: need to edit for realy server.
+CallbackURL = '{}/cart/verify/'.format(os.environ.get('DOMAIN')) # Important: need to edit for realy server.
 
 
 
